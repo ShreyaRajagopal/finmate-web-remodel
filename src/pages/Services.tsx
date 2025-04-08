@@ -5,29 +5,14 @@ import { Button } from "@/components/ui/button";
 const Services = () => {
   const services = [
     {
-      title: "Financial Analytics",
+      title: "Cash Stash Stats",
       description: "Get detailed insights about your spending patterns and financial health with powerful analytics tools.",
       icon: "📊"
     },
     {
-      title: "Budget Planning",
-      description: "Create personalized budgets that align with your financial goals and keep track of your progress.",
-      icon: "💰"
-    },
-    {
-      title: "Investment Tracking",
+      title: "Money Moves",
       description: "Monitor your investment portfolio performance and get recommendations based on market trends.",
       icon: "📈"
-    },
-    {
-      title: "Bill Management",
-      description: "Never miss a payment with automated reminders and direct bill payments from your account.",
-      icon: "📅"
-    },
-    {
-      title: "Tax Optimization",
-      description: "Maximize your tax benefits with our intelligent tax planning and optimization features.",
-      icon: "📝"
     },
     {
       title: "Financial Advice",
@@ -49,7 +34,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-10">
           {services.map((service, index) => (
             <div 
               key={index}
