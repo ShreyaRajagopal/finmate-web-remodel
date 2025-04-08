@@ -36,17 +36,24 @@ const Services = () => {
         <h2 className="text-4xl font-bold mb-12 text-center">Our Services</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-[#11193f] p-6 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4 text-blue-400">Cash Stash Stats</h3>
-            <p className="text-gray-300">Track and analyze your cash flow with detailed statistics and visualizations.</p>
-          </div>
+          <Link to="/cash-stash-stats" className="block">
+            <div className="bg-[#11193f] p-6 rounded-xl transition-transform hover:transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Cash Stash Stats</h3>
+              <p className="text-gray-300">Track and analyze your cash flow with detailed statistics and visualizations.</p>
+              <Button className="mt-4 bg-blue-500 hover:bg-blue-600">Learn More</Button>
+            </div>
+          </Link>
+          
           <div className="bg-[#11193f] p-6 rounded-xl">
             <h3 className="text-2xl font-bold mb-4 text-blue-400">Money Moves</h3>
             <p className="text-gray-300">Monitor your investments and financial activities with real-time updates.</p>
+            <Button className="mt-4 bg-blue-500 hover:bg-blue-600">Coming Soon</Button>
           </div>
+          
           <div className="bg-[#11193f] p-6 rounded-xl">
             <h3 className="text-2xl font-bold mb-4 text-blue-400">Financial Advice</h3>
             <p className="text-gray-300">Get personalized recommendations to help you achieve your financial goals.</p>
+            <Button className="mt-4 bg-blue-500 hover:bg-blue-600">Coming Soon</Button>
           </div>
         </div>
       </div>
